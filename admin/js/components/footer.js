@@ -4,9 +4,10 @@ export default {
     data: function () {
         return {
             logo: {
-                url: "images/logo.svg",
+                url: "images/logo-notxt.svg",
                 alt: "PAWP Heros Logo, Protection, Awareness and Wellness Prophylactic Heros"
-            }
+            },
+            copyright: "© 2020"
         }
     },
     
@@ -17,7 +18,7 @@ export default {
         }
     },
 
-    template: '<footer><div class="footer-top"><div class="tri-left"></div><div class="tri-right"></div></div><div class="footer-bot"><img class="footer-logo" :src="logo.url" :alt="logo.alt"><span class="back-to-top" @click="backtotop">Back to Top</span></div></footer>'
+    template: '<footer><div class="footer-top"><div class="tri-left"></div><div class="tri-right"></div></div><div class="footer-bot"><img class="footer-logo" :src="logo.url" :alt="logo.alt"><span class="back-to-top" @click="backtotop">Back to Top</span></div><div class="copyright" v-text="copyright"></div></footer>'
     
 }
 

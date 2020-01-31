@@ -6,16 +6,15 @@
         <img class="logo" :src="logo.url" :alt="logo.alt"/>
     </div>
     <div class="header-mid">
-    <nav class="header-nav">
-        <h3 class="hidden">Navigation</h3>
-            <ul>
+        <img class="burger" :class="{ 'burger-active': burger.active }" :src="burger.url" :alt="burger.alt" @click="burger.active = !burger.active;">
+        <nav class="header-nav" :class="{'mobile-show': burger.active}">
+            <h3 class="hidden">Navigation</h3>
+            <ul class="header-links">
                 <li class="link" v-for="link in links">
                     <a :href="link.url" v-text="link.name"></a>
                     <div class="sublink-box" v-if="link.sublinks !== null">
-                        <div v-for="sublink in link.sublinks">
-                            <div class="sublink">
-                                <a :href="sublink.url" v-text="sublink.name"></a>
-                            </div>
+                        <div class="sublink" v-for="sublink in link.sublinks">
+                            <a :href="sublink.url" v-text="sublink.name"></a>
                         </div>
                     </div>
                 </li>

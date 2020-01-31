@@ -14,7 +14,7 @@ const vueIndex = (() => {
             },
             greeting: {
                 title: "PAWP Heroes",
-                left: "Who better to turn to for help than a hero? We known topics such as HIV and AIDS can be a sensitive matter, and you may not want to confide in a parent or close friend. That’s why we are here!",
+                left: "Who better to turn to for help than a hero? We know topics such as HIV and AIDS can be a sensitive matter, and you may not want to confide in a parent or close friend. That’s why we are here!",
                 right: "PAWP Heroes unite! With the help of these well educated heroes, you can ask any question and have guaranteed support. We have your back!"
             },
             hero: {
@@ -30,31 +30,31 @@ const vueIndex = (() => {
                 contents: "There are many ways to help, and our website makes it easy. Whether you’re looking to help out in the community, or simply educate yourself so you can help end the stigma, we provide many resources under the resources tab."
             },
             social_media: {
-                title: "Follow Us on Social Media",
+                title: "FOLLOW US ON SOCIAL MEDIA",
                 icons: [
                     {
                         a: "https://www.instagram.com/",
-                        url: "./images/ig.jpg",
+                        url: "./images/ig.png",
                         alt: "Instagram Icon"
                     },
                     {
-                        a: "https://www.facebook.com/",
-                        url: "./images/fb.jpg",
-                        alt: "Facebook Icon"
-                    },
-                    {
                         a: "https://www.twitter.com/",
-                        url: "./images/tw.jpg",
+                        url: "./images/tw.png",
                         alt: "Twitter Icon"
                     },
                     {
                         a: "https://www.whatsapp.com/",
-                        url: "./images/wa.jpg",
+                        url: "./images/wa.png",
                         alt: "Whatsapp Icon"
                     },
                     {
+                        a: "https://www.facebook.com/",
+                        url: "./images/fb.png",
+                        alt: "Facebook Icon"
+                    },
+                    {
                         a: "https://www.tiktok.com/en/",
-                        url: "./images/tt.jpg",
+                        url: "./images/tt.png",
                         alt: "Tik Tok Icon"
                     }
                 ]

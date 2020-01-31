@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PAWP Heros Home</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ojm4egq.css">
     <link rel="stylesheet" href="styles/css/main.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <h1 class="hidden">Welcome to the Protection, Awareness and Wellness Prophylactic Heroes website</h1>
         <navigation_header></navigation_header>
 
-        <video :src="top_video.url" :type="top_video.type" :alt="top_video.alt" class="top-video" height="300px" width="450px" controls></video>
+        <video :src="top_video.url" :type="top_video.type" :alt="top_video.alt" class="top-video" controls></video>
         
         <section class="greeting">
             <h2 class="greeting-title">{{ greeting.title }}</h2>
@@ -25,25 +26,29 @@
                     {{ greeting.right }}
                 </div>
             </section>
-            <div class="greeting-bot">
-                <div class="tri-left"></div>
-                <div class="tri-right"></div>
-            </div>
         </section>
+        <div class="greeting-bot">
+            <div class="tri-left"></div>
+            <div class="tri-right"></div>
+        </div>
 
         <section class="campaign">
             <img class="hero-photo" :src="hero.url" :alt="hero.alt">
             <div class="campaign-text">
                 <h2 class="campaign-title">{{ hero.title }}</h2>
-                <div class="campaign-content">
-                    {{ hero.contents }}
-                </div>
+                {{ hero.contents }}
             </div>
         </section>
 
         <section class="help">
-            <div class="help-content">{{ help.contents }}</div>
-            <img class="help-photo" :src="help.url" :alt="help.alt">
+            <div class="help-content">
+                <h2 class="help-title">{{ help.title }}</h2>
+                {{ help.contents }}
+            </div>
+            <div class="photo-wrapper">
+                <img class="help-photo" :src="help.url" :alt="help.alt">
+                <div class="help-more"><a href="give.html">SEE MORE</a></div>
+            </div>
         </section>
 
         <section class="social-media">
@@ -52,7 +57,7 @@
             </div>
             <div class="social-media-icons">
                 <div v-for="link in social_media.icons">
-                    <a href="link.a"><img class="social-media-icon" :src="link.url" :alt="link.alt"></a>
+                    <a :href="link.a"><img class="social-media-icon" :src="link.url" :alt="link.alt"></a>
                 </div>
             </div>
         </section>
