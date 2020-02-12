@@ -65,19 +65,20 @@
     padding-top: 200px;
     display: flex;
     flex-direction: row;
+    width: 84%;
+    justify-content: space-between;
 }
 
 .hero-photo {
-    display: block;
-    flex: 0 1 575px;
-    height: auto;
+    max-width: 500px;
 }
 
 .campaign-text {
+    flex: 0 1 700px;
     color: $dark-blue;
     font-family: $main-font;
     font-size: 22px;
-    padding: 8%;
+    padding: 30px;
 }
 
 .campaign-title {
@@ -97,6 +98,7 @@
     color: $dark-blue;
     font-family: $main-font;
     size: 22px;
+    flex: 1 0 700px;
     padding: 30px;
 }
 
@@ -112,7 +114,6 @@
 }
 
 .help-photo {
-    display: block;
     flex: 0 1 750px;
     height: auto;
 }
