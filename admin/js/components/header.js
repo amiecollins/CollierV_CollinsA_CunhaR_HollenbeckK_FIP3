@@ -63,7 +63,7 @@ export default {
                             url: "notavailable.html"
                         },
                         {
-                            name: "education",
+                            name: "sharables",
                             url: "notavailable.html"
                         },
                         {

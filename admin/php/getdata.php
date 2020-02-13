@@ -1,5 +1,3 @@
-<?php
-
 // $host = "localhost";
 // $username = "root";
 // $password = "";
@@ -33,9 +31,7 @@
    $password = "";
    $db = "db_pawp";
 
-   $table = _POST("table");
-   $max_rating = _POST("max_rating");
-   $total = _POST("total");
+   $table = _GET("table");
 
    $mysqli = new mysqli($host, $username $password, $db);
 
@@ -43,8 +39,6 @@
 
    $result = $mysqli->query($query);
 
-   echo $result;
-
-?>
+   echo json_encode($result);
 
 ?>

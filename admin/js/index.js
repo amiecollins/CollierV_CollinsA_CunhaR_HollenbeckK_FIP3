@@ -1,6 +1,11 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
 import navigation_header from './components/header.js'
 import pawp_footer from './components/footer.js'
+import get from './includes/get.js'
+
+var home_top_data = get("tbl_home_top");
+var home_bot_data = get("tbl_home_bot");
+var socials_data = get("tbl_socials");
 
 const vueIndex = (() => {
 
