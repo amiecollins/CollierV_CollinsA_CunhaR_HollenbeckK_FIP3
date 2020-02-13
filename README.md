@@ -9,6 +9,7 @@
 - [x] style guide v1
 - [X] story board
 - [X] infographics
+- [x] wireframes V2
 - [ ] code
 - [ ] video
 
