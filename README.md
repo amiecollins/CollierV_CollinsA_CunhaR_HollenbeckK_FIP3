@@ -7,8 +7,11 @@
 - [x] workback schedule
 - [x] wireframe v1
 - [x] style guide v1
-- [ ] story board
-- [ ] infographics
+- [X] story board
+- [X] infographics
+- [x] wireframes V2
+- [ ] code
+- [ ] video
 
 
 ![image](https://user-images.githubusercontent.com/43250456/73209639-ad409c00-4116-11ea-9f27-94d5485b3d8e.png)
