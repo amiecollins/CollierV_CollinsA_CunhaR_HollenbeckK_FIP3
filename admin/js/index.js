@@ -4,41 +4,15 @@ import pawp_footer from './components/footer.js'
 import get from './includes/get.js'
 
 var socials_data = get("tbl_socials");
-
+console.log(socials_data);
 const vueIndex = (() => {
 
     let vm = new Vue({
 
         data: {
             social_media: {
-                title: "FOLLOW US ON SOCIAL MEDIA",
-                icons: [
-                    {
-                        a: "https://www.instagram.com/",
-                        url: "./images/ig.png",
-                        alt: "Instagram Icon"
-                    },
-                    {
-                        a: "https://www.twitter.com/",
-                        url: "./images/tw.png",
-                        alt: "Twitter Icon"
-                    },
-                    {
-                        a: "https://www.whatsapp.com/",
-                        url: "./images/wa.png",
-                        alt: "Whatsapp Icon"
-                    },
-                    {
-                        a: "https://www.facebook.com/",
-                        url: "./images/fb.png",
-                        alt: "Facebook Icon"
-                    },
-                    {
-                        a: "https://www.tiktok.com/en/",
-                        url: "./images/tt.png",
-                        alt: "Tik Tok Icon"
-                    }
-                ]
+                title: "Learn more on our Socials",
+                icons: Object.values(socials_data)
             }
         },
 
