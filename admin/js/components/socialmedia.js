@@ -1,6 +1,6 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
-import navigation_header from './components/header.js'
-import pawp_footer from './components/footer.js'
+import navigation_header from './header.js'
+import pawp_footer from './footer.js'
 
 const vueSocialMedia = (() => {
 
