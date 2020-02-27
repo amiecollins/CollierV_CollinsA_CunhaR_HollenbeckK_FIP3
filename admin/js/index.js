@@ -3,7 +3,7 @@ import navigation_header from './components/header.js'
 import pawp_footer from './components/footer.js'
 import get from './includes/get.js'
 
-var socials_data = get("tbl_socials");
+var socials_data = get();
 console.log(socials_data);
 const vueIndex = (() => {
 

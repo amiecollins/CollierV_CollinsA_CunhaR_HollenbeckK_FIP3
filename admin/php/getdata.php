@@ -1,44 +1,42 @@
-// $host = "localhost";
-// $username = "root";
-// $password = "";
-// $db = "db_pawp";
-
-// $connection = mysql_connect($host, $username, $password);
-
-// if(! $connection ) {
-//    die('Could not connect: ' . mysql_error());
-// }
-
-// $query = 'SELECT * FROM tbl_';
-// mysql_select_db(db);
-// $retval = mysql_query( $query, $connection );
-
-// if(! $retval ) {
-//    die('Could not get data: ' . mysql_error());
-// }
-
-// while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
-//    echo $row;
-// }
-
-// echo "Fetched data successfully\n";
-
-// mysql_close($connection);
-
 <php?
    $host = "localhost";
    $username = "root";
    $password = "";
    $db = "db_pawp";
 
-   $table = _GET("table");
-
    $mysqli = new mysqli($host, $username $password, $db);
+   if ($mysqli->connect_errno) {
+      echo "Error: Failed to make a MySQL connection, here is why: \n";
+      echo "Errno: " . $mysqli->connect_errno . "\n";
+       echo "Error: " . $mysqli->connect_error . "\n";
+      exit;
+   }
+   $query = "SELECT * FROM tbl_socials";
 
-   $query = "SELECT * FROM " + $table;
+   $result = mysqli_query($mysqli, $query);
 
-   $result = $mysqli->query($query);
+   if ($result === false) {
+      throw new DatabaseErrorException();
+   }
+   
+   $data = [];
+   
+   while ($row = $result->fetch_assoc())
+   {
+      $data[] = $row;
+   }
 
-   echo json_encode($result);
+   $finalresult = json_encode($data[]);
+   
+   echo $finalresult;
+   
 
-?>
+<!--    
+   if ($result === false) {
+      echo "not found";
+   } else {
+      $finalresult = serialize($result);
+      Response.Write($finalresult);
+      echo $finalresult;
+   }
+?> -->
