@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 13, 2020 at 08:16 PM
--- Server version: 5.7.26
--- PHP Version: 7.2.18
+-- Generation Time: Feb 27, 2020 at 01:36 AM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -41,11 +41,11 @@ CREATE TABLE IF NOT EXISTS `tbl_events` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_gethelp`
+-- Table structure for table `tbl_get_help`
 --
 
-DROP TABLE IF EXISTS `tbl_gethelp`;
-CREATE TABLE IF NOT EXISTS `tbl_gethelp` (
+DROP TABLE IF EXISTS `tbl_get_help`;
+CREATE TABLE IF NOT EXISTS `tbl_get_help` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) COLLATE utf8_bin NOT NULL,
   `img_url` varchar(100) COLLATE utf8_bin NOT NULL,
@@ -71,38 +71,6 @@ CREATE TABLE IF NOT EXISTS `tbl_give` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_home_bot`
---
-
-DROP TABLE IF EXISTS `tbl_home_bot`;
-CREATE TABLE IF NOT EXISTS `tbl_home_bot` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(100) COLLATE utf8_bin NOT NULL,
-  `img_url` varchar(100) COLLATE utf8_bin NOT NULL,
-  `description` text COLLATE utf8_bin NOT NULL,
-  `url` varchar(100) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_home_top`
---
-
-DROP TABLE IF EXISTS `tbl_home_top`;
-CREATE TABLE IF NOT EXISTS `tbl_home_top` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `video_url` varchar(100) COLLATE utf8_bin NOT NULL,
-  `title` varchar(100) COLLATE utf8_bin NOT NULL,
-  `description_l` text COLLATE utf8_bin NOT NULL,
-  `description_r` text COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tbl_icons`
 --
 
@@ -112,7 +80,17 @@ CREATE TABLE IF NOT EXISTS `tbl_icons` (
   `img_url` varchar(100) COLLATE utf8_bin NOT NULL,
   `alt` varchar(200) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `tbl_icons`
+--
+
+INSERT INTO `tbl_icons` (`id`, `img_url`, `alt`) VALUES
+(1, 'fb.svg', 'Facebook'),
+(2, 'tw.svg', 'Twitter'),
+(3, 'ig.svg', 'Instagram'),
+(4, 'tt.svg', 'Tik Tok');
 
 -- --------------------------------------------------------
 
@@ -175,7 +153,17 @@ CREATE TABLE IF NOT EXISTS `tbl_socials` (
   `description` text COLLATE utf8_bin NOT NULL,
   `embed` text COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Dumping data for table `tbl_socials`
+--
+
+INSERT INTO `tbl_socials` (`id`, `name`, `url`, `icon_id`, `description`, `embed`) VALUES
+(1, 'Facebook', 'https://www.facebook.com/PAWP-Heroes-100858708186011/', 1, 'Visit our Facebook to learn more about our Heroes and how they can help us fight against the BB&V Villians and help their victims.', 'https://www.facebook.com/PAWP-Heroes-100858708186011/'),
+(2, 'Twitter', 'https://twitter.com/PAWP_Heroes', 2, 'Sassy much? Hear from our favourite heroes and learn more about their cause and how to help them fight the BB&V Villians and help their everyone live healthy and safe lives.', 'https://twitter.com/PAWP_Heroes'),
+(3, 'Instagram', 'https://www.instagram.com/pawp_heroes/', 3, 'Visit our Instagram to meet our Heroes and Villians well as learn cool facts to help keep you and your loved ones\' safe and healthy.', 'https://www.instagram.com/pawp_heroes/'),
+(4, 'Tik Tok', 'https://www.tiktok.com/en/', 4, 'Download Tik Tok to see our Heroes in action!', '');
 
 -- --------------------------------------------------------
 
