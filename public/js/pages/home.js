@@ -1,6 +1,7 @@
 import video_player from '../components/video_player.js'
+import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
 
-export default {
+export default  {
     data: function () {
         return {
             top_video: {
@@ -56,14 +57,18 @@ export default {
     methods: {
         refreshVideo: function () {
             var newID = this.top_video.id + 1;
-            if (newID === max) {
+            if (newID === this.max) {
                 newID = 0;
             } 
             this.top_video.id = newID;
             this.top_video.on = false;
-            Vue.nextTick(function () {
-                this.top_video.on = true;
-            })
+            Vue.nextTick().then(function () {
+
+            });
+            this.top_video.on = true;
+        },
+        showVideo: function () {
+            this.top_video.on = true;
         }
     },
 
@@ -73,7 +78,7 @@ export default {
 
 
     template: `<div id="home">
-    <section class="video-player"><h2 class="hidden">Meet the Heroes</h2><video_player :id="top_video.id" v-if="top_video.on" @reload-video(refreshVideo)></video_player></section>
+    <section class="video-player"><h2 class="hidden">Meet the Heroes</h2><video_player :id.sync="top_video.id" v-if="top_video.on === true" v-on:reload-video="refreshVideo"></video_player></section>
     
     <section class="greeting">
         <h2 class="greeting-title">{{ greeting.title }}</h2>

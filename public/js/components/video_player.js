@@ -8,7 +8,7 @@ export default {
                     alt: "PAWPman introduction",
                     type: "video/mp4"
                 },{
-                    url: "./videos/rubberrebel.mp4",
+                    url: "./videos/rebelrubber.mp4",
                     alt: "Rebel Rubber introduction",
                     type: "video/mp4"
                 },{
