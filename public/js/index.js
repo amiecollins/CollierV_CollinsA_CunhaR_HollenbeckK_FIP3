@@ -1,6 +1,6 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
 import error_page from './pages/notavailable.js'
-import home from './pages/notavailable.js'
+import home from './pages/home.js'
 import pawp_footer from './components/footer.js'
 
 const vueIndex = (() => {
@@ -138,7 +138,7 @@ const vueIndex = (() => {
             }
         },
 
-        created() {
+        created: function () {
             this.checkSize();
             window.addEventListener('resize', this.checkSize);
         },
