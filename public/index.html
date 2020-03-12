@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAWP Heros Home</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ojm4egq.css">
+    <link rel="stylesheet" href="styles/css/main.css">
+</head>
+<body>
+    <div id="index">
+        <h1 class="hidden">Welcome to the Protection, Awareness and Wellness Prophylactic Heroes website</h1>
+        <header><h2 class="hidden">Header Bar</h2><div class="header-top"><img class="logo" :src="logo.url" :alt="logo.alt"/></div><div class="header-mid"><img class="burger" :class="{'burger-active': burger.active}" :src="burger.url" :alt="burger.alt" @click="burgerToggle"><nav class="header-nav" :class="{'mobile-show': burger.active}"><h3 class="hidden">Navigation</h3><ul class="header-links"><li class="link" v-for="link in links"><a :href="link.url" v-text="link.name"></a><div class="sublink-box" v-if="link.sublinks !== null"><div class="sublink" v-for="sublink in link.sublinks"><a :href="sublink.url" v-text="sublink.name"></a></div></div></li></ul></nav></div><div class="header-bot"><div class="tri-left"></div><div class="tri-right"></div></div></header>
+
+
+        <div class="helpContainer">
+
+        <h1 class="needHelp">I Need Help</h1>
+
+        <p>We are here to help. We know tha not everyone has people to talk to. We want to make sure people feel the comfort to confide in us and local organizations like the Region HIV/AIDS Connection. We provide many resources to try and help whatever need you may have.</p>
+
+        <section class="helpLinkCont">
+            <h3 class="hidden">Here are some resources to help you out.</h3>
+            <div v-for="resource in resources" class="resource">
+                <a :href="resource.url">
+                    <div class="resourceTitle">
+                        {{ resource.title }}
+                    </div>
+
+                    <img :src="resource.imgurl" :alt="resource.alt" class="resourceImg">
+                </a>
+            </div>
+        </section>
+
+        </div>
+
+
+        
+        <home v-if="page === 'home'"></home>
+        <error_page v-if="page === 'notavailable'"></error_page>
+        <pawp_footer></pawp_footer>
+
+    </div>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>

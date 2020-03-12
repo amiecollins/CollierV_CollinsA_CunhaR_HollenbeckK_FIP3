@@ -1,0 +1,307 @@
+@import "../vars.scss";
+
+.top-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+}
+
+.greeting {
+    width: 90%;
+    background-color: $dark-blue;
+    color: white;
+    font-family: $main-font;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.greeting-title {
+    font-family: $header-font;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.greeting-contents {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.greeting-contents div {
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.greeting-bot {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.greeting-bot .tri-left {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, $dark-blue 0%, $dark-blue 50%, transparent 50%);
+}
+
+.greeting-bot .tri-right {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left bottom, $dark-blue 0%, $dark-blue 50%, transparent 50%);
+}
+
+.campaign {
+    background-color: $light-grey;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.hero-photo {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.campaign-text {
+    color: $dark-blue;
+    font-family: $main-font;
+    font-size: 22px;
+    padding: 30px;
+}
+
+.campaign-title {
+    font-family: $header-font;
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.help {
+    background-color: $light-blue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.help-content {
+    color: $dark-blue;
+    font-family: $main-font;
+    size: 22px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.help-title {
+    font-family: $header-font;
+    font-size: 45px;
+    margin-top: 50px;
+}
+
+.photo-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.help-photo {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.help-more {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.help-more a {
+    color: $dark-blue;
+    font-family: $main-font;
+    size: 22px;
+}
+
+.social-media {
+    width: 60%;
+    background-color: white;
+    padding: 8% 20%;
+}
+
+.social-media-title {
+    font-size: 45px;
+    color: $dark-blue;
+    font-family: $main-font;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.social-media-icons {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.social-media-icons div {
+    flex: 1 1 25px;
+    padding: 5px;
+}
+
+.social-media-icon {
+    width: 75px;
+    height: auto;
+}
+
+
+@media screen and (min-width: 750px) {
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .greeting {
+        width: 90%;
+        background-color: $dark-blue;
+        color: white;
+        font-family: $main-font;
+        font-size: 22px;
+        line-height: 30px;
+        padding: 5%;
+        padding-bottom: 0%;
+        margin-top: 50px;
+    }
+
+    .greeting-title {
+        font-family: $header-font;
+        font-size: 45px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .greeting-contents {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .greeting-contents div {
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    .greeting-bot {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .greeting-bot .tri-left {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        background-image: linear-gradient(to right bottom, $dark-blue 0%, $dark-blue 50%, transparent 50%);
+    }
+
+    .greeting-bot .tri-right {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        background-image: linear-gradient(to left bottom, $dark-blue 0%, $dark-blue 50%, transparent 50%);
+    }
+
+    .campaign {
+        background-color: $light-grey;
+        padding: 8%;
+        padding-top: 200px;
+        display: flex;
+        flex-direction: row;
+        width: 84%;
+        justify-content: space-between;
+    }
+
+    .hero-photo {
+        max-width: 500px;
+    }
+
+    .campaign-text {
+        flex: 0 1 700px;
+        color: $dark-blue;
+        font-family: $main-font;
+        font-size: 22px;
+        padding: 20px;
+    }
+
+    .campaign-title {
+        font-family: $header-font;
+        font-size: 45px;
+        padding-bottom: 30px;
+    }
+
+    .help {
+        background-color: $light-blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .help-content {
+        color: $dark-blue;
+        font-family: $main-font;
+        size: 22px;
+        max-width: 500px;
+        padding: 40px;
+        margin-left: 20px;
+    }
+
+    .help-title {
+        font-family: $header-font;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .photo-wrapper {
+        display: block;
+        overflow: hidden;
+        max-width: 500px;
+        padding: 50px;
+    }
+
+    .help-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .help-more {
+        padding-top: 10px;
+        margin-right: 10%;
+        width: 100px;
+    }
+
+    .help-more a {
+        color: $dark-blue;
+        font-family: $main-font;
+        size: 22px;
+    }
+
+}
+
