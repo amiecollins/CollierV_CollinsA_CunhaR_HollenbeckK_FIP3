@@ -3,9 +3,67 @@
 }
 
 .helpContainer {
-    margin-top: 500px;
+    margin-top: 250px;
+    margin-bottom: 100px;
 } 
+
+.helpContainer p {
+    word-wrap: break-word;
+    width: 550px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
 
 .needHelp {
     font-family: $header-font;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.resourceTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.resourceImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 640px) {
+
+
+    .helpContainer p {
+        font-size: 24px;
+        width: 900px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .helpLinkCont {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 200px;
+    }
+
+    .resourceTitle {
+        margin-bottom: 30px;
+    }
+
+    .resourceImg {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 }
