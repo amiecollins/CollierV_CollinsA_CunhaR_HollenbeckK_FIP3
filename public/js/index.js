@@ -1,107 +1,16 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
 import error_page from './pages/notavailable.js'
 import home from './pages/home.js'
+import events from './pages/events.js'
 import pawp_footer from './components/footer.js'
+import pawp_header from './components/header.js'
 
 const vueIndex = (() => {
 
     let vm = new Vue({
 
         data: {
-            page: "home",
-            logo: {
-                url: "images/logo.svg",
-                alt: "PAWP Heros Logo, Protection, Awareness and Wellness Prophylactic Heros"
-            },
-            links: [
-                {
-                    name: "home",
-                    url: "home",
-                    sublinks: [
-
-                    ]
-                },
-                {
-                    name: "events",
-                    url: "events",
-                    sublinks: [
-                        {
-                            name: "pawp walk",
-                            url: "event-pawpwalk"
-                        },
-                        {
-                            name: "the party red",
-                            url: "notavailable"
-                        },
-                        {
-                            name: "motivation day",
-                            url: "notavailable"
-                        },
-                        {
-                            name: "a day To remember",
-                            url: "notavailable"
-                        }
-                    ]
-                },
-                {
-                    name: "socials",
-                    url: "socialmedia",
-                    sublinks: [
-                        {
-                            name: "youtube",
-                            url: "notavailable"
-                        }
-                    ]
-                },
-                {
-                    name: "resources",
-                    url: "resources",
-                    sublinks: [
-
-                    ]
-                },
-                {
-                    name: "how to help",
-                    url: "give",
-                    sublinks: [
-                        {
-                            name: "volunteering",
-                            url: "notavailable"
-                        },
-                        {
-                            name: "sharables",
-                            url: "notavailable"
-                        },
-                        {
-                            name: "donation",
-                            url: "notavailable"
-                        }
-                    ]
-                },
-                {
-                    name: "I need help",
-                    url: "gethelp",
-                    sublinks: [
-                        {
-                            name: "rhac",
-                            url: "https://hivaidsconnection.ca/"
-                        },
-                        {
-                            name: "resource",
-                            url: "notavailable"
-                        },
-                        {
-                            name: "resource",
-                            url: "notavailable"
-                        }
-                    ]
-                }
-            ],
-            burger: {
-                active: false,
-                url: "images/bg.svg",
-                alt: "burger menu button"
-            }
+            page: "home"
         },
         
         methods: {
@@ -138,15 +47,12 @@ const vueIndex = (() => {
             }
         },
 
-        created: function () {
-            this.checkSize();
-            window.addEventListener('resize', this.checkSize);
-        },
-
         components: {
             error_page,
+            pawp_header,
             pawp_footer,
-            home
+            home,
+            events
         }
 
     }).$mount("#index");
