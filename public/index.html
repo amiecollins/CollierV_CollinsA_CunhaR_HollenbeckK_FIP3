@@ -15,8 +15,9 @@
         <header><pawp_header></pawp_header></header>
         
         <home v-if="page === 'home'"></home>
-        <events v-if="page === 'events'">
+        <events v-if="page === 'events'" setPage="setPage">
         </events>
+        <gethelp v-if="page === 'gethelp'"></gethelp>
 
         <error_page v-if="page === 'notavailable'"></error_page>
         <pawp_footer></pawp_footer>

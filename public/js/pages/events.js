@@ -33,25 +33,20 @@ export default {
             ]
         }
     },
-
-    created: function () {
-        this.checkSize();
-        window.addEventListener('resize', this.checkSize);
-    },
     
     methods: {
         
     },
 
-    template: `
+    template: `<div class="events-container">
     <h2 class="events-title">Events</h2>
     <section class="event" v-for="event in events">
         <img class="event-image" :src="event.imgurl" :alt="event.alt">
         <div class="event-content">
             <h3 class="event-name">{{ event.title }}</h3>
             <p>{{ event.description }}</p>
-            <a :href="event-link"><button class="buy-tickets"></button></a>
+            <a :href="event.link"><button class="buy-tickets"></button></a>
         </div>
-    </section>
+    </section></div>
     `
 }
