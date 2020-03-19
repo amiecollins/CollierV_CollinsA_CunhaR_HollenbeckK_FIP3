@@ -11,9 +11,7 @@
       echo $error;
       die;
    }
-   
-   echo "connected!"; // remove this line after testing your connection
-   
+
    $query = "SELECT * FROM tbl_socials";
 
    $result = mysqli_query($mysqli, $query);

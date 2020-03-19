@@ -1,14 +1,15 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
 import error_page from './pages/notavailable.js'
 import home from './pages/home.js'
+import events from './pages/events.js'
 import pawp_footer from './components/footer.js'
+import pawp_header from './components/header.js'
 
 const vueIndex = (() => {
 
     let vm = new Vue({
 
         data: {
-            page: "resources",
             logo: {
                 url: "images/logo.svg",
                 alt: "PAWP Heros Logo, Protection, Awareness and Wellness Prophylactic Heros"
@@ -126,7 +127,7 @@ const vueIndex = (() => {
                 }
             ]
         },
-        
+
         methods: {
             fetchdata (page) {
                 console.log("trying to get data from " + table);
@@ -161,15 +162,12 @@ const vueIndex = (() => {
             }
         },
 
-        created: function () {
-            this.checkSize();
-            window.addEventListener('resize', this.checkSize);
-        },
-
         components: {
             error_page,
+            pawp_header,
             pawp_footer,
-            home
+            home,
+            events
         }
 
     }).$mount("#index");
