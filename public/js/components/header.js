@@ -22,19 +22,19 @@ export default {
                     sublinks: [
                         {
                             name: "pawp walk",
-                            url: "event-pawpwalk"
+                            url: "event-1"
                         },
                         {
                             name: "the party red",
-                            url: "notavailable"
+                            url: "event-2"
                         },
                         {
                             name: "motivation day",
-                            url: "notavailable"
+                            url: "event-3"
                         },
                         {
                             name: "a day To remember",
-                            url: "notavailable"
+                            url: "event-4"
                         }
                     ]
                 },
@@ -44,6 +44,14 @@ export default {
                     sublinks: [
                         {
                             name: "youtube",
+                            url: "notavailable"
+                        },
+                        {
+                            name: "instagram",
+                            url: "notavailable"
+                        },
+                        {
+                            name: "faacebook",
                             url: "notavailable"
                         }
                     ]
@@ -61,15 +69,15 @@ export default {
                     sublinks: [
                         {
                             name: "volunteering",
-                            url: "notavailable"
+                            url: "give-1"
                         },
                         {
                             name: "sharables",
-                            url: "notavailable"
+                            url: "give-2"
                         },
                         {
                             name: "donation",
-                            url: "notavailable"
+                            url: "give-3"
                         }
                     ]
                 },
@@ -101,13 +109,6 @@ export default {
     },
 
     methods: {
-        setPage: function (page) {
-            this.$emit('setPage', page);
-        },
-
-        setSubpage: function (page, element) {
-            this.$emit('setSubpage', page, element);
-        },
 
         burgerToggle() {
             if (this.burger.active) {
@@ -133,6 +134,27 @@ export default {
         window.addEventListener('resize', this.checkSize);
     },
     
-    template: `<div><h2 class="hidden">Header Bar</h2><div class="header-top"><img class="logo" :src="logo.url" :alt="logo.alt"/></div><div class="header-mid"><img class="burger" :class="{'burger-active': burger.active}" :src="burger.url" :alt="burger.alt" @click="burgerToggle"><nav class="header-nav" :class="{'mobile-show': burger.active}"><h3 class="hidden">Navigation</h3><ul class="header-links"><li v-for="link in links" class="link" ><div v-on="setPage(link.url)" v-text="link.name"></div><div class="sublink-box" v-if="link.sublinks !== null"><div class="sublink" v-for="sublink in link.sublinks"><a @click="setSubpage(link.url, sublink.url)" v-text="sublink.name"></a></div></div></li></ul></nav></div><div class="header-bot"><div class="tri-left"></div><div class="tri-right"></div></div></div>
+    template: `
+    <div>
+        <h2 class="hidden">Header Bar</h2>
+        <div class="header-top"><img class="logo" :src="logo.url" :alt="logo.alt"/></div>
+        <div class="header-mid">
+            <img class="burger" :class="{'burger-active': burger.active}" :src="burger.url" :alt="burger.alt" @click="burgerToggle">
+            <nav class="header-nav" :class="{'mobile-show': burger.active}">
+                <h3 class="hidden">Navigation</h3>
+                <ul class="header-links">
+                    <li v-for="link in links" class="link" >
+                        <a @click="$emit('setpage', link.url)" v-text="link.name"></a>
+                        <div class="sublink-box" v-if="link.sublinks.length !== 0">
+                            <div class="sublink" v-for="sublink in link.sublinks">
+                                <a @click="$emit('setsubpage', sublink.url)" v-text="sublink.name"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-bot"><div class="tri-left"></div><div class="tri-right"></div></div>
+    </div>
     `
 }

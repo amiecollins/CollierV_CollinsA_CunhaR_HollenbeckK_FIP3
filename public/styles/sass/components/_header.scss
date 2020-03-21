@@ -72,16 +72,14 @@ header {
   .link {
     margin: 0 auto;
     width: 60%;
-    height: auto;
     flex: 0 1 200px;
     vertical-align: middle;
     background-color: #ccc;
     color: #707070;
     font-family: $header-font;
     size: 30px;
-    max-height: 10px;
+    height: 10px;
     padding: 15px 5px;
-    overflow: hidden;
     transition: .5s;
     text-align: center;
     z-index: 1;
@@ -156,14 +154,17 @@ header {
     z-index: 1;
     height: 40px;
     width: 100%;
-    overflow: hidden;
     background-color: rgba($color: #000000, $alpha: 0);
     padding: 0px;
     margin: 0px;
   }
 
   .header-links {
-    height: 40px;
+    z-index: 1;
+    background-color: rgba($color: #000000, $alpha: 0);
+    padding: 0px;
+    margin: 0px;
+    min-height: 40px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -181,23 +182,24 @@ header {
     border: solid 1px #707070;
     height: 10px;
     padding: 15px 5px;
-    overflow: hidden;
+    overflow: clip;
     transition: .5s;
     text-align: center;
-    z-index: 1;
   
     &:hover {
-      background-color: gray;
+      background-color: transparent;
       color: #2b2d42;
-      border: solid 1px #2b2d42;
+      border: transparent;
       overflow: visible;
+      max-height: 200px;
     }
   }
   
   .sublink-box {
-    display: relative;
+    display: outside;
     height: auto;
     padding-top: 15px;
+    z-index: 3;
   }
   
   .sublink {
@@ -210,6 +212,7 @@ header {
     height: 10px;
     padding: 15px;
     text-align: center;
+    z-index: 3;
   
     &:hover {
       background-color: #8d99ae;

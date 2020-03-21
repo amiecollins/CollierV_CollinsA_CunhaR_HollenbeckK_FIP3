@@ -57,7 +57,7 @@ export default  {
     methods: {
         refreshVideo: function () {
             var newID = this.top_video.id + 1;
-            if (newID === this.max) {
+            if (newID >= this.top_video.max) {
                 newID = 0;
             } 
             this.top_video.id = newID;
