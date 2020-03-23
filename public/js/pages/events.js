@@ -4,28 +4,28 @@ export default {
             events: [
                 {
                     title: "The PAWP Walk",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    description: "Annually, we hold a 'PAWP Walk'. This walk is intended to get kids to come participate in activities in which they can learn more about HIV/AIDS and how to stay safe. At these events we also talk about how staying vaccinated can help reduce risk to those already affected by HIV/AIDS",
                     imgurl: "images/help_photo.png",
                     alt: "placeholder",
                     link: "https://www.eventbrite.ca/"
                 },
                 {
                     title: "The Party Red",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    description: "This year, we had our first 'The Party Red' concert. The concert is sponsored by local businesses and organizations to help bring singers and artists together. We try to bring in popular artists to invoke kids to come participate. We also have games and prizes to raise money for local initiatives.",
                     imgurl: "images/help_photo.png",
                     alt: "placeholder",
                     link: "https://www.eventbrite.ca/"
                 },
                 {
                     title: "Motivation Day",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    description: "Motivation day is an entire day dedicated to help inspire people in the community. We hold it on the weekend so anyone can come out. People will learn things about the Regional HIV/AIDS Connection and issues in our community to help bring everyone together and create a bright future for citizens.",
                     imgurl: "images/help_photo.png",
                     alt: "placeholder",
                     link: "https://www.eventbrite.ca/"
                 },
                 {
                     title: "A Day to Remember",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    description: "We could never forget those affected by the AIDS epidemic. This day is open to anyone that would like to remember and respect those who were involved in this biggest epidemic in North America.",
                     imgurl: "images/help_photo.png",
                     alt: "placeholder",
                     link: "https://www.eventbrite.ca/"
@@ -45,7 +45,7 @@ export default {
         <div class="event-content">
             <h3 class="event-name">{{ event.title }}</h3>
             <p>{{ event.description }}</p>
-            <a :href="event.link"><button class="buy-tickets"></button></a>
+            <a :href="event.link"><button class="buy-tickets">Buy Tickets</button></a>
         </div>
     </section></div>
     `
