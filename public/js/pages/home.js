@@ -1,5 +1,5 @@
 import video_player from '../components/video_player.js'
-import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js'
+import socials from '../components/socials.js'
 
 export default  {
     data: function () {
@@ -25,31 +25,6 @@ export default  {
                 alt: "placeholder help image",
                 title: "How to Help",
                 contents: "There are many ways to help, and our website makes it easy. Whether you’re looking to help out in the community, or simply educate yourself so you can help end the stigma, we provide many resources under the resources tab."
-            },
-            social_media: {
-                title: "FOLLOW US ON SOCIAL MEDIA",
-                icons: [
-                    {
-                        a: "https://www.instagram.com/",
-                        url: "./images/ig.svg",
-                        alt: "Instagram Icon"
-                    },
-                    {
-                        a: "https://www.twitter.com/",
-                        url: "./images/tw.svg",
-                        alt: "Twitter Icon"
-                    },
-                    {
-                        a: "https://www.facebook.com/",
-                        url: "./images/fb.svg",
-                        alt: "Facebook Icon"
-                    },
-                    {
-                        a: "https://www.tiktok.com/en/",
-                        url: "./images/tt.svg",
-                        alt: "Tik Tok Icon"
-                    }
-                ]
             }
         }
     },
@@ -73,7 +48,8 @@ export default  {
     },
 
     components: {
-        video_player
+        video_player,
+        socials
     },
 
 
@@ -116,15 +92,6 @@ export default  {
             <div class="help-more"><a href="give.html">SEE MORE</a></div>
         </div>
     </section>
-
-    <section class="social-media">
-        <div class="social-media-title">
-            {{ social_media.title }}
-        </div>
-        <div class="social-media-icons">
-            <div v-for="link in social_media.icons">
-                <a :href="link.a"><img class="social-media-icon" :src="link.url" :alt="link.alt"></a>
-            </div>
-        </div>
-    </section></div> `
+    <socials></socials>
+    </div> `
 }

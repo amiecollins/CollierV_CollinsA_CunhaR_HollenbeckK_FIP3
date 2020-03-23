@@ -2,6 +2,7 @@ import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.js
 import error_page from './pages/notavailable.js'
 import home from './pages/home.js'
 import gethelp from './pages/gethelp.js'
+import socialmedia from './pages/socialmedia.js'
 import events from './pages/events.js'
 import pawp_footer from './components/footer.js'
 import pawp_header from './components/header.js'
@@ -56,6 +57,7 @@ const vueIndex = (() => {
             pawp_header,
             pawp_footer,
             home,
+            socialmedia,
             gethelp,
             events
         }
