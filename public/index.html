@@ -18,8 +18,9 @@
         <events v-if="page === 'events'"></events>
         <gethelp v-if="page === 'gethelp'"></gethelp>
         <socialmedia v-if="page === 'socialmedia'"></socialmedia>
-        <resources v-if="page ==='resources'"> </resources>
-
+        <resources v-if="page ==='resources'"></resources>
+        <give v-if="page ==='give'" v-on:setpage="setPage"></give>
+        <volunteering v-if="page === 'volunteering'"></volunteering>
         <error_page v-if="page === 'notavailable'"></error_page>
         <pawp_footer></pawp_footer>
 

@@ -4,6 +4,8 @@ import home from './pages/home.js'
 import gethelp from './pages/gethelp.js'
 import socialmedia from './pages/socialmedia.js'
 import events from './pages/events.js'
+import give from './pages/give.js'
+import volunteering from './pages/volunteering.js'
 import resources from './pages/resources.js'
 import pawp_footer from './components/footer.js'
 import pawp_header from './components/header.js'
@@ -13,7 +15,7 @@ const vueIndex = (() => {
     let vm = new Vue({
 
         data: {
-            page: "events",
+            page: "home",
             burger: {
                 active: false,
                 url: "images/bg.svg",
@@ -61,7 +63,9 @@ const vueIndex = (() => {
             socialmedia,
             resources,
             gethelp,
-            events
+            events,
+            volunteering,
+            give
         }
 
     }).$mount("#index");
