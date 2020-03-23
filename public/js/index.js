@@ -4,6 +4,7 @@ import home from './pages/home.js'
 import gethelp from './pages/gethelp.js'
 import socialmedia from './pages/socialmedia.js'
 import events from './pages/events.js'
+import resources from './pages/resources.js'
 import pawp_footer from './components/footer.js'
 import pawp_header from './components/header.js'
 
@@ -58,6 +59,7 @@ const vueIndex = (() => {
             pawp_footer,
             home,
             socialmedia,
+            resources,
             gethelp,
             events
         }

@@ -10,7 +10,7 @@ export default {
                     url: "www.youtube.com",
                     imgurl: "images/help_photo.png",
                     alt: "placeholder",
-                    description: "",
+                    description: "We post inspirational and educational videos on our YouTube channel. Go check it out!",
                     button: "Go th Channel"
                 }
             ]
