@@ -4,7 +4,7 @@ export default {
     data: function () {
         return {
             logo: {
-                url: "images/logo-notxt.svg",
+                url: "images/pawp-logo.svg",
                 alt: "PAWP Heros Logo, Protection, Awareness and Wellness Prophylactic Heros"
             },
             copyright: "© 2020"
