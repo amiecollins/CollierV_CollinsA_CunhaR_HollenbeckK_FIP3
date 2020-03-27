@@ -1,0 +1,39 @@
+.socials {
+    margin-top: 250px;
+}
+
+.social-title {
+    text-align: center;
+    font-family: $header-font;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.social-photo {
+    width: 100%;
+}
+
+.social-description {
+    text-align: center;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    color: white;
+    font-size: 22px;
+    width: 250px;
+}
+
+.social-button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    font-family: $header-font;
+    color: $grey;
+    border-color: black;
+    border-style: solid;
+    width: 150px;
+    height: 40px;
+}

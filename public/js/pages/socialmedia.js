@@ -11,7 +11,7 @@ export default {
                     imgurl: "images/help_photo.png",
                     alt: "placeholder",
                     description: "We post inspirational and educational videos on our YouTube channel. Go check it out!",
-                    button: "Go th Channel"
+                    button: "Go the Channel"
                 }
             ]
         }
