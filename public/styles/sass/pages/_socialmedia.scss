@@ -37,3 +37,35 @@
     width: 150px;
     height: 40px;
 }
+
+@media screen and (min-width: 750px) {
+
+
+    .socials {
+        margin-top: 350px;
+    }
+
+    .social-title {
+        font-size: 34px;
+    }
+    
+    .social-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .social-description {
+        width: 650px;
+        margin-top: 60px;
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .social-button {
+        display: none;
+    }
+
+
+}
