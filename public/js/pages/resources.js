@@ -8,7 +8,7 @@ export default {
             resources: [
                 {
                     url: "www.catie.ca",
-                    description: "Canada's source for HIV & hepatitis C information"
+                    description: "Canadas source for HIV & hepatitis C information"
                 },
                 {
                     url: "www.unaids.org",
@@ -20,7 +20,7 @@ export default {
                 },
                 {
                     url: "www.doctorswithoutborders.ca",
-                    description: "International Assosication of Doctors best known for it's practices in dangerous areas of the world"
+                    description: "International Assosication of Doctors best known for its practices in dangerous areas of the world"
                 },
                 {
                     url: "www.aids2020.org",

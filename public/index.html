@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PAWP Heros</title>
+    <title>PAWP Heroes</title>
     <link rel="stylesheet" href="https://use.typekit.net/ojm4egq.css">
     <link rel="stylesheet" href="styles/css/main.css">
 </head>
@@ -22,8 +22,8 @@
         <give v-if="page ==='give'" v-on:setpage="setPage"></give>
         <volunteering v-if="page === 'volunteering'"></volunteering>
         <error_page v-if="page === 'notavailable'"></error_page>
-        <pawp_footer></pawp_footer>
 
+        <footer><pawp_footer></pawp_footer></footer>
     </div>
 </body>
 <script src="./js/index.js" type="module"></script>
