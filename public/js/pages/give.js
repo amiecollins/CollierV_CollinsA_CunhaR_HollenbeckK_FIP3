@@ -45,7 +45,7 @@ export default {
             <section class="give-way" v-for="way in giveways">
                 <h3 class="way-title" v-text="way.title"></h3>
                 <img class="way-img" :src="way.imgurl" :alt="way.alt">
-                <div class="way-button" v-text="way.button" @click="$emit(setpage, way.url)></div>
+                <div class="way-button" v-text="way.button" @click="$emit(setpage, way.url)"></div>
             </section>
         </div>
         <div class="quote" v-text="quote.content"></div>
