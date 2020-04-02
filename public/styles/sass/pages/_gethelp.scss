@@ -1,5 +1,5 @@
 .resourceImg {
-    width: 35%;
+    width: 65%;
 }
 
 .helpContainer {
@@ -9,16 +9,18 @@
 
 .helpContainer p {
     word-wrap: break-word;
-    width: 550px;
+    color: white;
+    width: 450px;
+    font-size: 24px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
 }
 
 .needHelp {
     font-family: $header-font;
-    font-size: 30px;
+    font-size: 45px;
+    color: white;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -42,10 +44,9 @@
 
 
     .helpContainer p {
-        font-size: 24px;
+        font-size: 40px;
         width: 900px;
         margin-top: 70px;
-        margin-bottom: 70px;
     }
     
     .helpLinkCont {
@@ -56,6 +57,7 @@
 
     .resourceTitle {
         margin-bottom: 30px;
+        font-size: 40px;
     }
 
     .resourceImg {
