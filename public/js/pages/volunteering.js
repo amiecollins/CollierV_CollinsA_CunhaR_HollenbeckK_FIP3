@@ -26,14 +26,9 @@ export default {
                     type: "text",
                     value: "",
                     id: "interest"
-                },
-                {
-                    name: "Message",
-                    type: "textarea",
-                    value: "",
-                    id: "message"
                 }
-            ]
+            ],
+            message: ""
         }
     },
     
@@ -49,6 +44,7 @@ export default {
         <div class="volun-content">
             <form class="volun-form">
                 <div class="volun-form-item" v-for="item in form"><label for="item.id" v-text="item.name"></label><input type="item.type" value="item.value" id="item.id"></div>
+                <div class="volun-form-item"><label for="message">Message</label><textarea value="message" id="message"></div>
                 <div class="volun-button" @click="submitform">Send</div>
             </form>
         </div>
