@@ -1,0 +1,51 @@
+.volunteering{
+    margin-top: 250px;
+}
+
+.volun-title {
+    color: white;
+    font-size: 28px;
+    font-family: $header-font;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.volun-form-item {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.volun-form-item label {
+    color: white;
+    font-family: $header-font;
+    font-size: 20px;
+    text-align: center;
+}
+
+.volun-form-item input {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#message {
+    height: 200px;
+}
+
+.volun-button {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+    vertical-align: center;
+    font-family: $header-font;
+    color: $grey;
+    border-color: black;
+    border-style: solid;
+    width: 150px;
+    height: 30px;
+}

@@ -15,7 +15,7 @@ const vueIndex = (() => {
     let vm = new Vue({
 
         data: {
-            page: "socialmedia",
+            page: "volunteering",
             burger: {
                 active: false,
                 url: "images/bg.svg",
