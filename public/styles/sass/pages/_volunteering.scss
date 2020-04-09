@@ -12,12 +12,13 @@
 
 .volun-form-item {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
 
 .volun-form-item label {
+    margin-bottom: 15px;
     color: white;
     font-family: $header-font;
     font-size: 20px;
@@ -26,6 +27,7 @@
 
 .volun-form-item input {
     width: 70%;
+    height: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -48,4 +50,18 @@
     border-style: solid;
     width: 150px;
     height: 30px;
+}
+
+@media screen and (min-width: 750px) {
+    .volun-form-item input {
+        width: 60%;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1030px) {
+    .volun-form-item input {
+        width: 35%;
+        height: 70px;
+    }
 }
