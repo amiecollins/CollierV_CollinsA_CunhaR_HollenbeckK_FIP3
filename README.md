@@ -1,5 +1,6 @@
 > CollierV_CollinsA_CunhaR_HollenbeckK_FIP3
-![p](https://user-images.githubusercontent.com/43250456/79076778-bdeec000-7cca-11ea-8b8c-cb0839a20e6b.jpg)
+
+![p](https://user-images.githubusercontent.com/43250456/79076816-ef678b80-7cca-11ea-97b2-add345453dc7.png)
 
 # Welcome to our PAWP project
 
