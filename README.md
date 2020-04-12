@@ -22,7 +22,7 @@
 - [Victoria Collier](https://github.com/vcollier)- Motion Designer and Project Manager
 
 ## Social Media
-https://www.facebook.com/PAWP-Heroes-100858708186011/
-https://www.instagram.com/pawp_heroes/
+- https://www.facebook.com/PAWP-Heroes-100858708186011/
+- https://www.instagram.com/pawp_heroes/
 
 
