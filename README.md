@@ -16,8 +16,9 @@
 - Adobe Photoshop/Illustrator
 
 ## Team
-- [Renata Cunha](https://github.com/Re-01)- Designer
-- [Victoria Collier](https://github.com/vcollier)- Motion Designer and Project Manager
 - [Amie Collins] (https://github.com/amiecollins)- Web Developer and Project Manager
 - [Keiran Hollenbeck] (https://github.com/kmankeiran)- Web Developer
+- [Renata Cunha](https://github.com/Re-01)- Designer
+- [Victoria Collier](https://github.com/vcollier)- Motion Designer and Project Manager
+
 
