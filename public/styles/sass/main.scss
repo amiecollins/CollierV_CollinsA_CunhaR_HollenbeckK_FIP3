@@ -8,6 +8,7 @@
 @import "pages/_home.scss";
 @import "pages/_resources.scss";
 @import "pages/_socialmedia.scss";
+@import "pages/_volunteering.scss";
 @import "components/_videoplayer.scss";
 @import "components/_header.scss";
 @import "components/_footer.scss";
@@ -20,6 +21,11 @@
     text-align: center;
 }
 
+
+
 body {
-    background-image:url("../../images/help_photo.png");
+    background-image: url("../../images/pawp-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
