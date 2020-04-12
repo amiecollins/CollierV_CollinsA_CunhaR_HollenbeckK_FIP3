@@ -1,5 +1,5 @@
 <?php
-    require_once './scripts/load.php';
+    require_once './load.php';
 
     $ip = $_SERVER['REMOTE_ADDR'];
 
