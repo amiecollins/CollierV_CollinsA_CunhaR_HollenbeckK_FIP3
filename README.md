@@ -10,7 +10,9 @@
 ```JavaScript```
 ```Vue```
 
-
+## Workspaces (Designers)
+- Adobe XD
+- Adobe Photoshop/Illustrator
 
 ## Team
 - [Renata Cunha](https://github.com/Re-01)- Designer
