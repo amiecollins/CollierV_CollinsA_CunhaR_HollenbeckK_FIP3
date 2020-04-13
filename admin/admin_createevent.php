@@ -29,7 +29,7 @@ confirm_logged_in();
     <h2>Create Event</h2>
     <h3><a href="index.php">Go Back</a></h3>
     <?php echo !empty($message)? $message: ''; ?>
-    <form action="admin_createres.php" method="post">
+    <form action="admin_createevent.php" method="post">
     <label>Event Name</label>
     <input type="text" name="name" value=""><br><br>
     <label>Date</label>

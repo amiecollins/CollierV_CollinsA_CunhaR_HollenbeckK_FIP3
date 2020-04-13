@@ -30,7 +30,7 @@ function createUser ($fname, $username, $password, $email){
 function getAllUsers(){
     $pdo = Database::getInstance()->getConnection();
 
-    $get_user_query = 'SELECT * FROM tbl_user';
+    $get_user_query = 'SELECT * FROM tbl_users';
     $users = $pdo->query($get_user_query);
 
     if($users) {
@@ -43,7 +43,7 @@ function getAllUsers(){
 function getSingleUser($id){
     $pdo = Database::getInstance()->getConnection();
     //TODO: execute the proper SQL query to fetch the user data
-    $get_user_query = 'SELECT * FROM tbl_user WHERE user_id = :id';
+    $get_user_query = 'SELECT * FROM tbl_users WHERE id = :id';
     $get_user_set = $pdo->prepare($get_user_query);
     $get_user_result = $get_user_set->execute(
         array(
@@ -53,7 +53,7 @@ function getSingleUser($id){
         //TODO: if the execution is successful, return the user data
         // Otherwise, return an error message
     if($get_user_result){
-        return $get_user_set;
+        return $get_user_result;
     }else{
         return 'There was a problem accessing the user';
     }
@@ -63,9 +63,9 @@ function editUser($id, $fname, $username, $password, $email){
         //TODO: set up database connection
         $pdo = Database::getInstance()->getConnection();
 
-        //TODO: Run the proper SQL query to update tbl_user with proper values
-        $update_user_query = 'UPDATE tbl_user SET user_fname = :fname, user_name = :username,';
-        $update_user_query.=' user_pass=:password, user_email =:email WHERE user_id = :id';
+        //TODO: Run the proper SQL query to update tbl_users with proper values
+        $update_user_query = 'UPDATE tbl_users SET fname = :fname, uname = :username,';
+        $update_user_query.=' pword=:password, email =:email WHERE id = :id';
         $update_user_set = $pdo->prepare($update_user_query);
         $update_user_result = $update_user_set->execute(
             array(
@@ -90,7 +90,7 @@ function editUser($id, $fname, $username, $password, $email){
 function deleteUser($id){
     $pdo = Database::getInstance()->getConnection();
 
-    $delete_user_query = 'DELETE FROM `tbl_user` WHERE user_id = :id';
+    $delete_user_query = 'DELETE FROM `tbl_users` WHERE id = :id';
     $delete_user_set = $pdo->prepare($delete_user_query);
     $delete_user_result = $delete_user_set->execute(
         array(

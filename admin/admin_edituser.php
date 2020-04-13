@@ -2,7 +2,7 @@
     require_once './load.php';
     confirm_logged_in();
 
-    $id = $_SESSION['user_id'];
+    $id = $_SESSION['id'];
     $user = getSingleUser($id);
 
     if(is_string($user)){
@@ -32,16 +32,16 @@
     <form action="admin_edituser.php" method="post">
     <?php while($info = $user->fetch(PDO::FETCH_ASSOC)): ?>
         <label>First Name:</label>
-        <input type="text" name="fname" value="<?php echo $info['user_fname'];?>"><br><br>
+        <input type="text" name="fname" value="<?php echo $info['fname'];?>"><br><br>
 
         <label>Username:</label>
-        <input type="text" name="username" value="<?php echo $info['user_name'];?>"><br><br>
+        <input type="text" name="username" value="<?php echo $info['uname'];?>"><br><br>
 
         <label>Password:</label>
-        <input type="text" name="password" value="<?php echo $info['user_pass'];?>"><br><br>
+        <input type="text" name="password" value="<?php echo $info['pword'];?>"><br><br>
 
         <label>Email:</label>
-        <input type="text" name="email" value="<?php echo $info['user_email'];?>"><br><br>
+        <input type="text" name="email" value="<?php echo $info['email'];?>"><br><br>
     <?php endwhile;?>
 
         <button type="submit" name="submit">Edit Account</button>

@@ -26,6 +26,12 @@
         <li><a href="admin_createevent.php">Create Event</a></li>
         <li><a href="admin_createpartner.php">Create Partner</a></li>
     </ul>
+    <ul>
+        <li><h3>Edit Content</h3></li>
+        <li><a href="admin_editres.php">Edit Resources</a></li>
+        <li><a href="admin_editevent.php">Edit Event</a></li>
+        <li><a href="admin_editpartner.php">Edit Partner</a></li>
+    </ul>
     
     
     

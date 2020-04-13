@@ -45,7 +45,7 @@ export default {
         <div class="event-content">
             <h3 class="event-name">{{ event.title }}</h3>
             <p>{{ event.description }}</p>
-            <a :href="event.link"><button class="buy-tickets">Buy Tickets</button></a>
+            <a href="https://www.eventbrite.ca/"><button class="buy-tickets">Buy Tickets</button></a>
         </div>
     </section></div>
     `
