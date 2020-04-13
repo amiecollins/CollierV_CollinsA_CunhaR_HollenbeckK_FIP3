@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PAWP Heroes</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ojm4egq.css">
+    <link rel="stylesheet" href="styles/css/main.css">
+</head>
+<body>
+    <div id="index">
+        <h1 class="hidden">Welcome to the Protection, Awareness and Wellness Prophylactic Heroes website</h1>
+
+        <header><pawp_header v-on:setpage="setPage"></pawp_header></header>
+        
+        <home v-if="page === 'home'"></home>
+        <events v-if="page === 'events'"></events>
+        <gethelp v-if="page === 'gethelp'"></gethelp>
+        <socialmedia v-if="page === 'socialmedia'"></socialmedia>
+        <resources v-if="page ==='resources'"></resources>
+        <give v-if="page ==='give'" v-on:setpage="setPage"></give>
+        <volunteering v-if="page === 'volunteering'"></volunteering>
+        <error_page v-if="page === 'notavailable'"></error_page>
+
+        <footer><pawp_footer></pawp_footer></footer>
+    </div>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>

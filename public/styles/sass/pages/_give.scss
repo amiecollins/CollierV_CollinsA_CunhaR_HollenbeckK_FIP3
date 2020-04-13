@@ -1,0 +1,110 @@
+.give {
+    margin-top: 240px;
+    margin-bottom: 100px;
+}
+
+.give-title {
+    font-family: $header-font;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+}
+
+.way-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.way-img {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.way-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+    vertical-align: center;
+    font-family: $header-font;
+    color: $grey;
+    border-color: black;
+    border-style: solid;
+    width: 150px;
+    height: 30px;
+}
+
+.quote {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.attribution {
+    color: white;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 640px) {
+
+    .give-title {
+        font-size: 45px;
+        margin-bottom: 80px;
+    }
+    
+    .description {
+        width: 650px;
+        font-size: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+    }
+
+    .in-need {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .way-title {
+        font-size: 45px;
+    }
+
+    .way-img {
+        width: 60%;
+    }
+
+    .quote {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (min-width: 1030px) {
+    .description {
+        width: 1050px;
+        font-size: 40px; 
+    }
+}

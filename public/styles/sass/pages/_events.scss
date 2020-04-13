@@ -1,0 +1,88 @@
+
+.events-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 220px;
+    margin-bottom: 100px;
+}
+
+.events-title {
+    font-family: $header-font;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.event-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.event-name {
+    font-family: $header-font;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.event-content p {
+    width: 313px;
+    font-family: $main-font;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.buy-tickets {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: $header-font;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border-width: 2px;
+}
+
+@media screen and (min-width: 750px) {
+
+    .event-image {
+      width: 40%;
+      margin-left: unset;
+      margin-right: unset;
+    }
+
+    .event {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .event-content {
+        margin-left: 100px;
+    }
+
+    .event-content p {
+        width: 400px;
+        text-align: left;
+    }
+
+    .buy-tickets {
+        margin-right: auto;
+    }
+
+
+
+}
